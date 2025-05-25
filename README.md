@@ -24,7 +24,7 @@ A Java-based desktop application designed to streamline university operations, i
 git clone https://github.com/TanishSharma2004/UniversityManagementSystem
 cd UniversityManagementSystem
 
-2. Set Up MySQL Database
+### 2. Set Up MySQL Database
 
 Install MySQL and ensure it’s running.
 Create a database named universitymanagementsystem:CREATE DATABASE universitymanagementsystem;
@@ -116,12 +116,12 @@ Update the database credentials in Conn.java:c = DriverManager.getConnection("jd
 
 Replace "your_password" with your MySQL root password.
 
-3. Add Icon Files
+### 3. Add Icon Files
 
 Place the required image files (about.jpg, exam.jpg, first.jpg, second.jpg, third.jpg) in the src/icons/ directory.
 If images are unavailable, modify the code to handle missing files (e.g., use default icons or remove image references).
 
-4. Compile and Run
+### 4. Compile and Run
 
 Open the project in an IDE or use the command line.
 Compile the Java files:javac -d . src/university/management/system/*.java
@@ -132,7 +132,7 @@ Run the application:java university.management.system.Splash
 
 Log in using the credentials from the login table (e.g., username: admin, password: admin123).
 
-Usage
+### Usage
 
 Splash Screen: Displays a welcome interface with options to log in or view information.
 Login: Authenticate using admin credentials to access the dashboard (Project.java).
@@ -145,21 +145,21 @@ View the About page for developer information.
 
 
 
-Dependencies
+### Dependencies
 
 Java Swing: For GUI components.
 MySQL Connector/J: JDBC driver for MySQL (download from MySQL website).
 JCalendar: For date picker (JDateChooser in AddStudent.java, AddTeacher.java). Download from Toedter and add to the classpath.
 RS2XML: For table data binding (DbUtils in ExaminationDetails.java, FeeStructure.java, StudentDetails.java). Download from SourceForge and add to the classpath.
 
-Troubleshooting
+### Troubleshooting
 
 Database Connection Errors: Ensure MySQL is running, credentials in Conn.java are correct, and the database/tables exist.
 Missing Icons: Place images in src/icons/ or update code to skip image loading.
 Library Issues: Add jcalendar.jar and rs2xml.jar to the project’s build path in your IDE or classpath.
 Compilation Errors: Verify the package structure and ensure all files are in src/university/management/system/.
 
-Contributing
+### Contributing
 Contributions are welcome! Please fork the repository, make changes, and submit a pull request. Ensure code follows Java naming conventions and includes comments for clarity.
 Developers
 
